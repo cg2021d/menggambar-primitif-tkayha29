@@ -6,13 +6,18 @@ function main(){
     /**
      * A (0.0, 0.5), B (0.5, -0.5), C (-0.5, -0.5)
      */
+    //Membuat Huruf F
     var vertices = [
-        0.5, 0.5,    //titik A
-        0.5, -0.5,   //titik B
-        -0.5, -0.5,   //titik C
-        -0.5, -0.5,   //titik C
-        -0.5, 0.5,    //titik D
-        0.5, 0.5,    //titik A
+        -0.1, -0.3,    //titik A
+        0.1, -0.3,   //titik B
+        0.1, 0.0,   //titik C
+        0.3, 0.0,   //titik D
+        0.3, 0.2,    //titik E
+        0.1, 0.2,    //titik F
+        0.1, 0.3,    //titik G
+        0.4, 0.3,    //titik H
+        0.4, 0.5,    //titik I
+        -0.1, 0.5,    //titik J
     ];
 
     var positionBuffer = gl.createBuffer();
@@ -57,5 +62,5 @@ function main(){
     gl.clearColor(1.0, 1.0, 1.0, 1);
     gl.clear(gl.COLOR_BUFFER_BIT);
 
-    gl.drawArrays(gl.TRIANGLES, 0, 6);
+    gl.drawArrays(gl.LINE_LOOP, 0, 10);
 }
